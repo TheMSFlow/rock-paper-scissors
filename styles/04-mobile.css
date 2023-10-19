@@ -71,7 +71,7 @@
   }
   
   main {
-    height: 100vh;
+    height: 100vmax;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,8 +98,8 @@
     border-radius: 100%;
     transition: box-shadow ease 0.15s;
     cursor: pointer;
-    height: 5.75vmax;
-    width: 5.75vmax;
+    height: 7vmax;
+    width: 7vmax;
   }
   
   .game-option-section button:hover {
@@ -112,11 +112,11 @@
    }
   
   .player-icon {
-    height: 1.5vmax;
+    height: 2vmax;
     margin: 0rem 0.5rem;
   }
   .move-icon {
-    height: 2vmax;
+    height: 2.5vmax;
   }
   
   
@@ -133,7 +133,7 @@
     color: white;
     text-align: center;
     text-wrap: nowrap;
-    font-size: 3vmax;
+    font-size: 4vmax;
   }
   
   .result-info {
@@ -145,7 +145,7 @@
   .stats {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #E9EAFF;
-    font-size: 1.25vmax;
+    font-size: 1.5vmax;
     text-wrap: nowrap;
     text-align: center;
   }
