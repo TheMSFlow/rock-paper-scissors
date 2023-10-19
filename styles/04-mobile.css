@@ -188,7 +188,7 @@
   .footer p {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #E9EAFF;
-    font-size: 0.75rem;
+    font-size: 1vmax;
     font-weight: 200;
     text-align: right;
     padding-right: 1rem;
