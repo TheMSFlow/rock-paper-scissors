@@ -77,7 +77,7 @@
     align-items: center;
     justify-content: center;
     row-gap: 4vmax;
-    padding: 0vmax 0vmax 3vmax 3vmax;
+    padding: 0vmax 0vmax 0vmax 3vmax;
     position: relative;
     z-index: 1;
   }
