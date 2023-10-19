@@ -1,0 +1,200 @@
+/* TABLET (480px - 991px) */
+
+@media (min-width: 480px) and (max-width:991px) {
+  
+  .logo {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 5vmax;
+    height: 5vmax;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  .topbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0rem;
+    height: 5vmax;
+    left: 0rem;
+    right: 0rem;
+    border-bottom: 1px solid #6368da;
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
+    user-select: none;
+  }
+  
+  .topbar-content{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 1rem;
+  }
+  
+  .topbar-content p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.75vmax;
+    color: #00034C;
+    padding-top: 0.70vmax;
+  }
+  
+  .sidebar  {
+    background-color: transparent;
+    position: fixed;
+    top: 0rem;
+    width: 5vmax;
+    left: 0rem;
+    bottom: 0rem;
+    border-right: 1px solid #6368da;
+  }
+  
+  .sidebar-content{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100%;
+    gap: 2rem;
+  }
+  
+  .sidebar-content p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.75vmax;
+    color: #00034C;
+    writing-mode: vertical-rl;
+    padding-left: 1.5vmax;
+  }
+  
+  main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4vmax;
+    padding: 8vmax 5vmax 5vmax;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .game-option-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    justify-content: center;
+    height: auto;
+    width: auto;
+   
+  }
+  
+  .game-option-section button {
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 100%;
+    transition: box-shadow ease 0.15s;
+    cursor: pointer;
+    height: 10vmax;
+    width: 10vmax;
+  }
+  
+  .game-option-section button:hover {
+    background-color: antiquewhite;
+    box-shadow: 1px 5px 5px rgba(227, 229, 240, 0.6);
+  }
+
+  .game-option-section button img {
+    height: 40%;
+   }
+  
+  .player-icon {
+    height: 2vmax;
+    margin: 0rem 0.5rem;
+  }
+  .move-icon {
+    height: 3vmax;
+  }
+  
+  
+  .outcome-section {
+    display:flex;
+    flex-direction: column;
+    row-gap: 1vmax;
+    align-items: center;
+  }
+  
+  .result {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 6vmax;
+  }
+  
+  .result-info {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #E9EAFF;
+    font-size: 1rem;
+  }
+  
+  .stats {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #E9EAFF;
+    font-size: 1.5vmax;
+  }
+  
+  .stats-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vmax;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .stats-section button {
+    background-image: linear-gradient(144.65deg, #860471, #6368da);
+    border-radius: 5rem;
+    border: none;
+    display: flex;
+    flex: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmax 2vmax;
+    font-size: 1.5vmax;
+    text-decoration: none;
+    transition: background-color .3s ease-in;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .stats-section button:hover {
+    background-image: linear-gradient(144.65deg, #6368da, #860471);
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+  }
+  
+  .footer p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #E9EAFF;
+    font-size: 0.75rem;
+    font-weight: 200;
+    text-align: right;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+}
+
+
+
+
+
+
+

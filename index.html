@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> RPS Game</title>
+    <link rel="icon" type="image/x-icon" href="/icons/MSFavicon.png">
+
+    <link rel="stylesheet" href="styles/00-general.css">
+    <link rel="stylesheet" href="styles/01-desktop.css">
+    <link rel="stylesheet" href="styles/02-laptop.css">
+    <link rel="stylesheet" href="styles/03-tablet.css">
+    <link rel="stylesheet" href="styles/04-mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500;600;700&family=Pixelify+Sans:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-content topbar-scroll">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+      <div class="topbar-content topbar-scroll">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-content sidebar-scroll">
+        <p>SCISSORS</p>
+        <p>PAPER</p>
+        <p>ROCK</p>
+      </div>
+      <div class="sidebar-content sidebar-scroll">
+        <p>SCISSORS</p>
+        <p>PAPER</p>
+        <p>ROCK</p>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="/icons/MSlogo.svg">
+    </div>
+
+    <main>
+      <section class="outcome-section">
+        <p class="js-result-info result-info"></p>
+        <p class="js-result result"></p>
+      </section>
+
+      <section class="game-option-section">
+        <button onClick="
+        playGame('Rock');
+      "><img src="icons/rock-emoji.png"></button>
+
+        <button onClick="
+        playGame('Paper');
+      "><img src="icons/paper-emoji.png"></button>
+        
+        <button onClick="
+        playGame('Scissors');
+      "><img src="icons/scissors-emoji.png">
+        </button>
+      </section>
+
+      <section class="stats-section">
+        <p class="js-stats stats"></p>
+        
+        <button onclick="
+          score.wins = 0;
+          score.losses = 0;
+          score.ties = 0;
+          localStorage.removeItem('myScore');
+
+          updateScoreElem();
+
+            document.querySelector('.js-result').innerHTML = `New Game!`;
+
+            document.querySelector('.js-result-info').innerHTML = resetStatus;
+          
+        ">
+          Reset Score
+        </button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Developed by Michael Steve &copy;
+      </p>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

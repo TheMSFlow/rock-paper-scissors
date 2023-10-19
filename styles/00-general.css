@@ -1,0 +1,59 @@
+/*  GENERAL CSS  */
+
+
+input,textarea,button,select,a {
+  -webkit-tap-highlight-color: transparent;
+} 
+
+
+body {
+background-color: #01067a;
+margin: 0rem;
+overflow-x: hidden;
+}
+
+p {
+margin-top: 0rem;
+margin-bottom: 0rem;
+font-family: roboto, arial;
+}
+
+
+
+
+/* ANIMATION */
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.topbar-scroll {
+  animation: scroll 10s linear infinite;
+}
+
+.content-image {
+  -webkit-transform: translateZ(0);
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - 2rem));
+  }
+}
+
+.sidebar-scroll {
+  animation: move 10s linear infinite reverse;
+}
+
+.sidebar-image {
+  -webkit-transform: translateZ(0);
+}
