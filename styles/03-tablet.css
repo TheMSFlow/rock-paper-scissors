@@ -168,7 +168,7 @@
     transition: background-color .3s ease-in;
     color: white;
     cursor: pointer;
-    margin-bottom: 1vmax;
+    margin-bottom: 2vmax;
   }
   
   .stats-section button:hover {
