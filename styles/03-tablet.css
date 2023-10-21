@@ -38,8 +38,12 @@
   .topbar-content p {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 2.75vmax;
-    color: #00034C;
     padding-top: 0.70vmax;
+    background: linear-gradient(144.65deg, #860471, #6368da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    
   }
   
   .sidebar  {
@@ -50,6 +54,9 @@
     left: 0rem;
     bottom: 0rem;
     border-right: 1px solid #6368da;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   
   .sidebar-content{
@@ -59,14 +66,20 @@
     justify-content: space-around;
     min-height: 100%;
     gap: 2rem;
+    width: 2vmax;
+    align-items: center;
+    padding-left: 1.5vmax;
   }
   
   .sidebar-content p {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 2.75vmax;
-    color: #00034C;
     writing-mode: vertical-rl;
-    padding-left: 1.5vmax;
+    background: linear-gradient(144.65deg, #860471, #6368da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    
   }
   
   main {
